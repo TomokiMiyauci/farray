@@ -28,10 +28,6 @@
   },
   "sideEffects": false,
   "license": "MIT",
-  "dependencies": {
-    "cryptocurrency-types": "^1.0.0-beta.11",
-    "node-fetch": "^2.6.6"
-  },
   "devDependencies": {
     "@commitlint/cli": "^14.1.0",
     "@semantic-release/changelog": "^6.0.1",
