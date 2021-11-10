@@ -1,3 +1,9 @@
+# [v1.0.0-beta.3](https://github.com/TomokiMiyauci/farray/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2021-11-10)
+
+## 🐛 Bug Fixes
+
+- [`e0ae608`](https://github.com/TomokiMiyauci/farray/commit/e0ae608) Remove unused dependencies
+
 # [v1.0.0-beta.2](https://github.com/TomokiMiyauci/farray/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2021-11-10)
 
 ## ✨ New Features
