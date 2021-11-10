@@ -5,8 +5,8 @@ import type { Head } from '@/head/types'
 /**
  * Take first element of list safety
  *
- * @param T - `string` or any `array`
- * @returns first element of list
+ * @param T - Any list
+ * @returns The first element of `val`
  *
  * @example
  * ```ts
