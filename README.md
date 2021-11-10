@@ -26,6 +26,8 @@ TypeScript-first functional array utility
 
 ## Install
 
+### Node.js
+
 ```bash
 npm i farray
 ```
@@ -36,6 +38,12 @@ yarn add farray
 
 ```bash
 pnpm add farray
+```
+
+### Deno
+
+```ts
+import { head } from 'https://esm.sh/farray'
 ```
 
 ## API
@@ -64,6 +72,31 @@ head<[]> // undefined
 head<['hello', 'world']> // 'hello'
 ```
 
+### last
+
+Take last element of list safety
+
+#### types
+
+```ts
+declare const last: <T extends string | readonly unknown[]>(val: T) => Last<T>
+```
+
+#### examples
+
+```ts
+// String
+last('') // ''
+last('hello') // 'o'
+```
+
+```ts
+// Array
+last('hello', 'new', 'world') // 'world'
+last([]) // undefined
+last(['one', 2, 3, 4]) // 4
+```
+
 ### take
 
 Return a slice of string or array with `n` elements taken from the beginning.
@@ -87,6 +120,31 @@ take(3, 'hello') // 'hel'
 ```ts
 // Array
 take(3, [1, 2, 3, 4]) // [1, 2, 3]
+```
+
+### takeLast
+
+Return a slice of string or array with `n` elements taken from the end
+
+#### types
+
+```ts
+declare const takeLast: <T extends string | readonly unknown[]>(
+  howMany: number,
+  val: T
+) => T
+```
+
+#### examples
+
+```ts
+// String
+takeLast(3, 'hello') // 'llo'
+```
+
+```ts
+// Array
+takeLast(3, [1, 2, 3, 4]) // [2, 3, 4]
 ```
 
 ## :handshake: Contributing
