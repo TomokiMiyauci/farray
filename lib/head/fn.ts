@@ -3,16 +3,16 @@ import { take } from '@/take/fn'
 import type { Head } from '@/head/types'
 
 /**
- * Infer the head types.
+ * Take first element of list safety
  *
- * @typeParam T - `string` or any `array`
- * @returns Head element of the `T`
+ * @param T - `string` or any `array`
+ * @returns first element of list
  *
  * @example
  * ```ts
  * // String
- * head<''> // ''
- * head<'hello'> // 'hello'
+ * head('') // ''
+ * head('hello') // 'h'
  * ```
  *
  * @example

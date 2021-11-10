@@ -3,7 +3,7 @@
  *
  * @param howMany - The number of elements to take
  * @param val - `String` or `Array` to query
- * @returns The slice of array
+ * @returns The sliced list
  *
  * @example
  * ```ts
