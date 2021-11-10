@@ -1,6 +1,6 @@
 {
   "testEnvironment": "node",
-  "testMatch": ["<rootDir>/tests/**/*.spec.[tj]s?(x)"],
+  "testMatch": ["<rootDir>/lib/**/*_test.ts?(x)", "!**/types_test.ts?(x)"],
   "transform": {
     "^.+\\.(t|j)sx?$": "@swc/jest"
   },
@@ -9,9 +9,5 @@
   },
   "clearMocks": true,
   "collectCoverage": true,
-  "coverageDirectory": "<rootDir>/coverage",
-  "setupFilesAfterEnv": [
-    "jest-extended/all",
-    "<rootDir>/tests/setup/setup_files_after_env.ts"
-  ]
+  "coverageDirectory": "<rootDir>/coverage"
 }

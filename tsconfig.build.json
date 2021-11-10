@@ -7,5 +7,6 @@
     "outDir": "dist",
     "emitDeclarationOnly": true
   },
-  "include": ["lib/**/*.ts"]
+  "include": ["lib/**/*.ts"],
+  "exclude": ["lib/**/*_test.ts"]
 }

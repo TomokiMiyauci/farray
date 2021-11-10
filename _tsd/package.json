@@ -1,0 +1,17 @@
+{
+  "types": "tsd.d.ts",
+  "tsd": {
+    "directory": "../lib",
+    "testFiles": [
+      "*types_test.ts"
+    ],
+    "compilerOptions": {
+      "baseUrl": "../",
+      "paths": {
+        "@/*": [
+          "lib/*"
+        ]
+      }
+    }
+  }
+}
